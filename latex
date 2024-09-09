@@ -1,0 +1,212 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-10pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Large \textbf{Sai Krishna Nandyala}} \\
+    \href{tel:8178224901}{817-822-4901}
+    \textbar{} Arlington, TX \textbar{}
+    \href{https://www.linkedin.com/in/saikrishna0308/}{LinkedIn} \textbar{}
+    \href{https://github.com/sa1Kr15hna}{GitHub} \textbar{}
+    \href{mailto:n.saikrishna.2k24@gmail.com}{n.saikrishna.2k24@gmail.com}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Arlington}{Arlington, TX}
+      {Master of Science in Applied Statistics and Data Science; GPA: 4.00}{Aug 2023 -- Dec 2024}
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Goa, India}
+      {Bachelor of Engineering in Mechanical Engineering; CGPA: 6.71}{Aug 2017 -- Jun 2021}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages :}{ Python, SQL, R, C++, HTML, CSS, JavaScript} \\
+      \textbf{Data Analysis and Visualization :}{ Pandas, Matplotlib, Seaborn} \\
+     \textbf{Machine Learning and AI :}{ Scikit-learn, PyTorch, TensorFlow, Keras, NLTK, Huggingface, LLMs} \\
+     \textbf{Core Competencies:}{  Supervised and Unsupervised Learning, Reinforcement Learning, Deep Learning, Natural
+Language Processing (NLP), Time Series Analysis, Weights and Biases, Ensemble Methods, Statistics, Data Structures and Algorithms , Object Oriented Programming
+} \\
+     \textbf{Tools and Frameworks:}{ Git, Jupyter, SQL Server, Spark, Flask, PowerBI}}}
+ \end{itemize}\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Handwritten Digit Recognition} $|$ \emph{TensorFlow, Keras}}{}
+          \resumeItemListStart
+            \resumeItem{Created a neural network model to recognise handwritten digits, achieving {\bf 98\% accuracy} by selecting ReLU activation function for faster computation.}
+            \resumeItem{Compared model performance by using {\bf Sigmoid} function and {\bf ReLU} as activation functions.}
+          \resumeItemListEnd
+
+ \resumeProjectHeading
+          {\textbf{Predicting Pediatric Appendicitis} $|$ \emph{GGplot, dplyr}}{}
+          \resumeItemListStart
+            \resumeItem{Built multiple classification models using {\bf significant features and their interactions} in {\bf R}.}
+            \resumeItem{Evaluated and compared model performance using Akaike Information Criterion {\bf (AIC)}, Bayesian Information Criterion {\bf (BIC)}, and {\bf Likelihood ratio test}.}
+          \resumeItemListEnd
+ \resumeProjectHeading
+          {\textbf{Building Energy Efficiency Prediction} $|$ \emph{Python, Pandas, Matplotlib, Seaborn}}{}
+          \resumeItemListStart
+            \resumeItem{Developed and compared Linear regression and Random Forest regression models using Mean Absolute Error {\bf (MAE)},Mean Squared Error {\bf (MSE)}, Root Mean Squared Error {\bf (RMSE)}, and {\bf Coefficient of Determination} (R-squared).}
+            \resumeItem{Used {\bf Matplotlib and Seaborn} to visually analyze structural data and to understand how the features are related to each other in {\bf Python}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Texas at Arlington}{Arlington, TX}
+      {Graduate Student Tutor - Math}{Feb 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Assisted in teaching and mentoring undergraduate students in fundamental statistics concepts, including probability, and hypothesis testing.}
+        \resumeItem{Graded assignments, conducted lab activities, and provided one-on-one support to enhance students' understanding and application of statistical methods.}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Cognizant}{Bangalore, India}
+      {Programmer Analyst }{Jul 2021 -- Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Used Salesforce Work-Relay to automate complex and tailored processes that satisfied specific business requirements and improved workflow efficiency by 18\%.}
+        \resumeItem{Created and optimized workflows that streamlined business operations and increased productivity using Lightning Web Components, Apex Triggers and Visualforce.}
+      \resumeItemListEnd
+        \resumeSubheading
+      {Upgrad}{Mumbai, India}
+      {Intern - Course Developer}{Jan 2021 -- Jun 2021}
+      \resumeItemListStart
+        \resumeItem{Curated and developed interactive Machine Learning course content using H5P to create quizzes and videos aligned with learning objectives and outcomes.}
+      \resumeItemListEnd
+          \resumeSubheading
+      {Honda Motorcycle and Scooter India}{Bangalore, India}
+      {Intern}{May 2019 -- Jul 2019}
+      \resumeItemListStart
+        \resumeItem{Identified and resolved issues in automated production and tool regrinding, reducing cutting tool costs by 10\%. Evaluated cutting tools with various alloys and coatings to determine the optimal combination for extended tool life and reduced defect rates.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
